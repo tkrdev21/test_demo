@@ -7,8 +7,6 @@ jobs:
   run-gtihub-actions:
       runs-on: ubuntu-latest
     steps:
-      - name: CheckOut
-        uses: actions/checkout@v1
       - name: List files
         run: |
           ls -a
