@@ -13,4 +13,4 @@ on:
     with:
       who-to-greet: John
   - name: Log to greet time
-    run: echo "{{steps.greet.ouptus.time}}}"
+    run: echo "{{steps.greet.ouptus.time}}"
