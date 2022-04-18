@@ -11,6 +11,6 @@ jobs:
         id: greet
         uses: actions/hello-world-javascript-actions@v1
         with:
-        who-to-greet: John
+          who-to-greet: John
       - name: Log to greet time
         run: echo "{{steps.greet.ouptus.time}}"
