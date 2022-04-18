@@ -3,8 +3,7 @@ on:
   push:
   pull_request:
     types: [closed, assigned, opened, reopened]
-    branches: 
-      - master
+    branches:     
 jobs:
   run-gtihub-actions:
     runs-on: ubuntu-latest
