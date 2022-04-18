@@ -5,8 +5,14 @@ on:
       - master
 jobs:
   run-gtihub-actions:
-    runs-on: ubuntu-latest
+      runs-on: ubuntu-latest
     steps:
+      - name: CheckOut
+        uses: actions/checkout@v1
+      - name: List files
+        run: |
+          ls -a
+          pwd 
       - name: simple JS Action
         id: greet
         uses: actions/hello-world-javascript-action@v1
