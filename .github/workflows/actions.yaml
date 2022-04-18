@@ -3,7 +3,7 @@ on:
   push:
     branches: 
       - master
- jobs:
+jobs:
   run-gtihub-actions:
   runs-on: ubuntu-latest
   steps:
