@@ -16,6 +16,6 @@ jobs:
         cat /etc/os-release
     - name: Run Python Commands
       run: |
-        import plotform
+        import platform
         print(platform.processor())
       shell: python
