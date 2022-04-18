@@ -15,10 +15,14 @@ jobs:
           pwd 
           sudo cp * /var/www/html/
           ls -ltr /var/www/html
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
+          echo $GITHUB_WORKSPACE
+          echo "${{ github.token }}"
       - name: simple JS Action
         id: greet
         uses: actions/hello-world-javascript-action@v1
         with:
           who-to-greet: John
       - name: Log to greet time
-        run: echo "{{steps.greet.ouptus.time}}"
+        run: echo "${{steps.greet.ouptus.time}}"
