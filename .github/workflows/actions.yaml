@@ -5,12 +5,12 @@ on:
       - master
 jobs:
   run-gtihub-actions:
-  runs-on: ubuntu-latest
-  steps:
-  - name: simple JS Action
-    id: greet
-    uses: actions/hello-world-javascript-actions@v1
-    with:
-      who-to-greet: John
-  - name: Log to greet time
-    run: echo "{{steps.greet.ouptus.time}}"
+    runs-on: ubuntu-latest
+    steps:
+      - name: simple JS Action
+        id: greet
+        uses: actions/hello-world-javascript-actions@v1
+        with:
+        who-to-greet: John
+      - name: Log to greet time
+        run: echo "{{steps.greet.ouptus.time}}"
