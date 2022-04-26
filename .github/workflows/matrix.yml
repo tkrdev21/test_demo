@@ -4,11 +4,11 @@ on:
 jobs:
   node-version:
     runs-on: ubuntu-latest
-    steps:
-      - name: Log node version
-        run: node -v
-        - uses: actions/setup-node@v3
-          with: 
-          node-version: '14'
-      - name: Log node version
-        run: node -v
+      steps:
+        - name: Log node version
+          run: node -v
+          - uses: actions/setup-node@v3
+            with: 
+            node-version: '14'
+        - name: Log node version
+          run: node -v
