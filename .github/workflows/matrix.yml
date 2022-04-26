@@ -1,10 +1,16 @@
 name: Matrix Workflow
 on: 
   push:
-    branches: 
+    branches:
+      - develop 
 jobs:
-  run-gtihub-actions:
+  Node-version:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkoutlog node version
+      - name: log node version
+        run: node -v
+        - uses: actions/setup-node@v3
+        with:
+        node-version: '6'
+      - name: log node version
         run: node -v
