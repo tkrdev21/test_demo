@@ -1,6 +1,7 @@
 name: Matrix Workflow
 on: 
   push:
+  branches: develop
 jobs:
   node-version:
     runs-on: ubuntu
